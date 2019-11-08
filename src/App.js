@@ -1,17 +1,23 @@
 import React from 'react';
-import styled from '@emotion/styled/macro';
+import tw from 'tailwind.macro';
 import './styles/build.css';
-
-const Wrapper = styled.h1`
-  background: red;
-  color: blue;
-`;
+import HeaderLeft from './components/Header/HeaderLeft';
 
 export default function App() {
   return (
-    <>
-      <Wrapper>Hello</Wrapper>
-      <h2 className="text-pink-800">Hello Again</h2>
-    </>
+    <div>
+      <header class="flex">
+        <HeaderLeft />
+        <div className="bg-gray-700 flex-1">
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+      <div></div>
+      <main>
+        <div></div>
+        <div></div>
+      </main>
+    </div>
   );
 }

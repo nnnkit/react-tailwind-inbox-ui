@@ -3,6 +3,7 @@ import "./styles/build.css"
 import HeaderLeft from "./components/Header/HeaderLeft"
 import HeaderRight from "./components/Header/HeaderRight"
 import MenuItem from "./components/Sidebar/MenuItem"
+import MenuTextItem from "./components/Sidebar/MenuTextItem"
 
 export default function App() {
   return (
@@ -23,6 +24,15 @@ export default function App() {
               <MenuItem />
               <MenuItem />
               <MenuItem />
+            </div>
+            <h2 className="text-xs font-semibold text-gray-600 uppercase mt-8">
+              Folders
+            </h2>
+            <div className="mt-4">
+              <MenuTextItem />
+              <MenuTextItem />
+              <MenuTextItem />
+              <MenuTextItem />
             </div>
           </nav>
         </div>

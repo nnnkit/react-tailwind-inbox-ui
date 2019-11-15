@@ -1,21 +1,36 @@
-import React from 'react';
-import tw from 'tailwind.macro';
-import './styles/build.css';
-import HeaderLeft from './components/Header/HeaderLeft';
-import HeaderRight from './components/Header/HeaderRight';
+import React from "react"
+import "./styles/build.css"
+import HeaderLeft from "./components/Header/HeaderLeft"
+import HeaderRight from "./components/Header/HeaderRight"
+import MenuItem from "./components/Sidebar/MenuItem"
 
 export default function App() {
   return (
-    <div>
-      <header class="flex">
+    <div className="h-screen flex flex-col">
+      <header class="flex flex-shrink-0">
         <HeaderLeft />
         <HeaderRight />
       </header>
-      <div></div>
-      <main>
-        <div></div>
-        <div></div>
-      </main>
+      <div className="flex-1 flex">
+        <div className="w-64 bg-gray-100 p-6">
+          <nav>
+            <h2 className="text-xs font-semibold text-gray-600 uppercase">
+              Mailboxes
+            </h2>
+            <div className="mt-2">
+              <MenuItem active />
+              <MenuItem />
+              <MenuItem />
+              <MenuItem />
+              <MenuItem />
+            </div>
+          </nav>
+        </div>
+        <main className="bg-gray-200">
+          <div></div>
+          <div></div>
+        </main>
+      </div>
     </div>
-  );
+  )
 }

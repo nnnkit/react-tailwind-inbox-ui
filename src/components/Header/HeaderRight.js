@@ -27,7 +27,7 @@ export default function HeaderRight() {
       <nav className="flex">
         <Link className="bg-gray-800">Mailbox</Link>
         {["Customers", "Reporting", "Manage"].map(item => (
-          <Link>{item}</Link>
+          <Link className="hover:bg-gray-600 ml-2">{item}</Link>
         ))}
       </nav>
       <div className="flex items-center">
@@ -38,7 +38,7 @@ export default function HeaderRight() {
           <input
             placeholder="Search"
             type="text"
-            className="pl-9 py-2 pr-2 bg-gray-900 rounded-lg text-sm placeholder-gray-400 text-white block w-full"
+            className="pl-9 py-2 pr-2 bg-gray-900 rounded-lg text-sm placeholder-gray-400 text-white block w-full focus:bg-white focus:outline-none focus:text-gray-900 focus:placeholder-gray-700"
           />
         </span>
         <button className="ml-5 fill-current text-gray-400 h-5 w-5 hover:text-gray-200 text-xl">

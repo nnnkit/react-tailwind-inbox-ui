@@ -4,6 +4,8 @@ import HeaderLeft from "./components/Header/HeaderLeft"
 import HeaderRight from "./components/Header/HeaderRight"
 import MenuItem from "./components/Sidebar/MenuItem"
 import MenuTextItem from "./components/Sidebar/MenuTextItem"
+import MainSidebar from "./components/Main/MainSidebar"
+import MainSIdebar from "./components/Main/MainSidebar"
 
 export default function App() {
   return (
@@ -36,9 +38,9 @@ export default function App() {
             </div>
           </nav>
         </div>
-        <main className="bg-gray-200">
-          <div></div>
-          <div></div>
+        <main className="flex bg-gray-200 flex-1 flex">
+          <MainSIdebar />
+          <div className="flex-1"></div>
         </main>
       </div>
     </div>

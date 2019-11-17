@@ -6,6 +6,7 @@ import MenuItem from "./components/Sidebar/MenuItem"
 import MenuTextItem from "./components/Sidebar/MenuTextItem"
 import MainSidebar from "./components/Main/MainSidebar"
 import MainSIdebar from "./components/Main/MainSidebar"
+import Filter from "./components/Main/Filter"
 
 export default function App() {
   return (
@@ -39,7 +40,16 @@ export default function App() {
           </nav>
         </div>
         <main className="flex bg-gray-200 flex-1 flex">
-          <MainSIdebar />
+          <div className="flex-grow w-full max-w-xs bg-gray-200 border-l border-r py-2 border-b">
+            <Filter />
+            <MainSIdebar />
+            <MainSIdebar />
+            <MainSIdebar />
+            <MainSIdebar />
+            <MainSIdebar />
+            <MainSIdebar />
+            <MainSIdebar />
+          </div>
           <div className="flex-1"></div>
         </main>
       </div>

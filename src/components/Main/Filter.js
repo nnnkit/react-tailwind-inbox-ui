@@ -3,7 +3,7 @@ import { MdKeyboardArrowDown, MdSort } from "react-icons/md"
 
 export default function Filter() {
   return (
-    <div className="flex justify-between px-4 py-2 items-center justify-between">
+    <div className="flex-shrink-0 px-4 py-2 items-center justify-between flex">
       <button className="text-xs font-semibold text-gray-600 flex items-center">
         Sorted by date
         <MdKeyboardArrowDown className="text-gray-500 ml-1" />

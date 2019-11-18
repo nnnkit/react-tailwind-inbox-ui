@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function MainSIdebar() {
+export default function MainSidebar() {
   return (
     <>
-      <a href="" className="block bg-white px-6 py-3 border-b">
+      <a href="" className="flex-1 block bg-white px-6 py-3 border-b">
         <div className="flex justify-between">
           <span className="text-sm font-medium font-semibold text-gray-900">
             Gloria Robetsan

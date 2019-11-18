@@ -7,6 +7,8 @@ import MenuTextItem from "./components/Sidebar/MenuTextItem"
 import MainSidebar from "./components/Main/MainSidebar"
 import Filter from "./components/Main/Filter"
 import TopIcons from "./components/Main/TopIcons"
+import MainlInfo from "./components/Main/MainlInfo"
+import MailBody from "./components/Main/MailBody"
 
 export default function App() {
   return (
@@ -51,23 +53,18 @@ export default function App() {
               <MainSidebar />
             </div>
           </div>
-          <div className="flex-1 w-0">
-            <div className="shadow-md">
+          <div className="flex-1 w-0 flex-col flex">
+            <div className="shadow-md relative">
               <div className="py-3 px-4 border-b bg-gray-100">
                 <TopIcons />
               </div>
-              <div className="flex justify-between bg-white p-4">
-                <span className="text-xl truncate">
-                  Re: Student Discount?Re: Student Discount?Re: Student
-                  Discount?Re: Student Discount?
-                </span>
-                <div className="flex-shrink-0">
-                  <span className="text-sm ml-3">#148</span>
-                  <button className="rounded-full bg-green-300 px-2 ml-4 text-sm text-green-900">
-                    Active
-                  </button>
-                </div>
-              </div>
+              <MainlInfo />
+            </div>
+            <div className="overflow-y-auto flex-1">
+              <MailBody />
+              <MailBody />
+              <MailBody />
+              <MailBody />
             </div>
           </div>
         </main>
